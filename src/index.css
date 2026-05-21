@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+/*Cores*/
+
+  --background: #0A0A0A;
+  --group-background:#0a0a0a5c;
+  --card: #141414;
+  --accent: #A51000;
+
+  --text-primary: #e1e1e1;
+  --text-secondary: #B3B3B3;
+  --text-tertiary: #6a7282;
+
+  --border: #262626;
+  --border-button: #900E00;
+  --hover: #F5F5F5;
+
+  --orb-color: #ff2b2b;
+  --orb-emissive: #ff0000;
+
+  --gradient-primary: rgba(180, 0, 0, 0.35);
+  --gradient-secondary: rgba(120, 0, 0, 0.25);
+
+  --glow: rgba(185, 28, 28, 0.2);
+
+/*Fontes*/
+
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
+}
+
+/*Modo claro*/
+
+.light {
+  --background: #F5F5F5;
+  --group-background:#ffffff5c;
+  --card: #FFFFFF;
+  --accent: #C11200;
+
+  --text-primary: #111111;
+  --text-secondary: #525252;
+
+  --border: #E5E5E5;
+  --border-button: #D4D4D4;
+
+  --orb-color: #ff6b6b;
+  --orb-emissive: #ff3b3b;
+
+  --gradient-primary: rgba(255, 80, 80, 0.25);
+  --gradient-secondary: rgba(255, 120, 120, 0.15);
+
+  --glow: rgba(255, 0, 0, 0.1);
+}
+
+/*Globais*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+
+  font-family: var(--font-primary);
+
+  min-height: 100vh;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--text-primary);
+  color: var(--background);
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+/*Tipografia*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 3vw, 3rem);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-weight: 300;
+}
+
+p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.85rem;
+}
+/*Links*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  transition: opacity var(--transition-default);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/*Botões*/
+  
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: fit-content;
+  
+    padding: 0.75rem;
+  
+    border: 2px solid var(--border);
+    border-radius: 2rem;
+  
+    transition:
+      border-color 0.3s ease,
+      transform 0.3s ease,
+      background 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    border-color: var(--text-primary);
+  
+    transform: translateY(-2px);
+  }
+
+/*Customização de Tailwind*/
+
+@layer base {
+  body {
+    @apply overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .transition-default {
+    @apply transition-all duration-300;
+  }
+}
+/*Responsivo*/
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 5rem;
+  }
+
+  .container {
+    padding-inline: 1.25rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* profile.css */
+
+.typing-wrapper {
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+}
+
+.typing-text {
+  position: relative;
+  display: inline-block;
+
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+
+  border-right: 2px solid var(--accent);
+
+  animation:
+    typing 12s steps(12) infinite,
+    cursor .11s infinite;
+}
+
+/* Texto trocando */
+.typing-text::before {
+  content: "My Services";
+  animation: words 13s infinite;
+}
+
+/* Efeito digitando */
+@keyframes typing {
+  /* digitando */
+  0%,
+  10% {
+    width: 0;
+  }
+
+  20%,
+  40% {
+    width: 14ch;
+  }
+
+  /* apagando */
+  50%,
+  60% {
+    width: 0;
+  }
+
+  /* digitando Login */
+  70%,
+  90% {
+    width: 15.03ch;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+/* troca dos textos */
+@keyframes words {
+  0%,
+  49% {
+    content: "Enginner Software";
+  }
+
+  50%,
+  100% {
+    content: "Frontend Developer";
+  }
+}
