@@ -17,14 +17,14 @@ function Introduction() {
       </h1>
       <Profile></Profile>
       <h3 className="">
-      Front End Developer focado em transformar ideias em experiências digitais modernas, funcionais e responsivas.  
-      ⏣ Formado no Técnólogo de Informática pelo ENIAC e atualmente cursando Engenharia de Software na FIAP, com paixão por programação, UI/UX e desenvolvimento web.
+        Front End Developer focado em transformar ideias em experiências digitais modernas, funcionais e responsivas.
+        ⏣ Formado no Técnólogo de Informática pelo ENIAC e atualmente cursando Engenharia de Software na FIAP, com paixão por programação, UI/UX e desenvolvimento web.
       </h3>
       <span className="flex gap-4">
         <a href="#projects">
-        <ButtonPrimary>Ver Projetos</ButtonPrimary>
+          <ButtonPrimary>Ver Projetos</ButtonPrimary>
         </a>
-        <a href="/src/assets/pdf/Kevin_s_CV.pdf" target="_blank">
+        <a href="/pdf/Kevin_s_CV.pdf" target="_blank" rel="noopener noreferrer">
           <ButtonSecondary>Ver Currículo</ButtonSecondary>
         </a>
       </span>
