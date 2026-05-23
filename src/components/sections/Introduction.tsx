@@ -22,9 +22,9 @@ function Introduction() {
       </h3>
       <span className="flex gap-4">
         <a href="#projects">
-        <ButtonPrimary>Ver Projetos</ButtonPrimary>
+          <ButtonPrimary>Ver Projetos</ButtonPrimary>
         </a>
-        <a href="/src/assets/pdf/Kevin_s_CV.pdf" target="_blank">
+        <a href="/pdf/Kevin_s_CV.pdf" target="_blank" rel="noopener noreferrer">
           <ButtonSecondary>Ver Currículo</ButtonSecondary>
         </a>
       </span>
