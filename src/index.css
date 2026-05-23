@@ -226,7 +226,7 @@ a:hover {
   border-right: 2px solid var(--accent);
 
   animation:
-    typing 12s steps(12) infinite,
+    typing 13s steps(12) infinite,
     cursor .11s infinite;
 }
 

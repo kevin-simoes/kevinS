@@ -18,7 +18,7 @@ function Introduction() {
       <Profile></Profile>
       <h3 className="w-full text-center sm:text-start">
       Front End Developer focado em transformar ideias em experiências digitais modernas, funcionais e responsivas.  
-      ⏣ Formado no Técnólogo de Informática pelo ENIAC e atualmente cursando Engenharia de Software na FIAP, com paixão por programação, UI/UX e desenvolvimento web.
+      <span className="hidden sm:inline">⏣ Formado no Técnólogo de Informática pelo ENIAC e atualmente cursando Engenharia de Software na FIAP, com paixão por programação, UI/UX e desenvolvimento web.</span>
       </h3>
       <span className="flex gap-4">
         <a href="#projects">

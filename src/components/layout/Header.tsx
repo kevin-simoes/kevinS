@@ -27,6 +27,7 @@ function Header() {
           transition-all duration-300
           hover:scale-105
           hover:border---accent)
+          backdrop-blur-md
         "
       >
         {theme === "dark" ? (
