@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { IoMdEye } from "react-icons/io";
 import { MdOpenInNew } from "react-icons/md";
 
 type ProjectCardProps = {
@@ -41,15 +40,6 @@ export function ProjectCard({
         className="absolute top-6 right-6 text-(--text-secundary) hover:text-white transition"
       >
         <MdOpenInNew className="size-6" />
-      </a>
-
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute top-22 right-6 text-(--text-secundary) hover:text-white transition"
-      >
-        <IoMdEye className="size-6" />
       </a>
 
       {/* Content */}

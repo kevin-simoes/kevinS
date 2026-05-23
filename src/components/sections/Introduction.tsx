@@ -10,13 +10,13 @@ function Introduction() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="flex flex-col gap-4 w-180"
+      className="flex flex-col items-center gap-4 max-w-180 wrap-break-word sm:items-start"
     >
       <h1 className="">
         🦥 Kevin Simões<span className="text-(--accent)">.</span>
       </h1>
       <Profile></Profile>
-      <h3 className="">
+      <h3 className="w-full text-center sm:text-start">
       Front End Developer focado em transformar ideias em experiências digitais modernas, funcionais e responsivas.  
       ⏣ Formado no Técnólogo de Informática pelo ENIAC e atualmente cursando Engenharia de Software na FIAP, com paixão por programação, UI/UX e desenvolvimento web.
       </h3>

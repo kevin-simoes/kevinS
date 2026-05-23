@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Orb />
-      <main className="relative z-10 flex flex-col gap-10 items-center w-full pt-70 pb-20">
+      <main className="relative z-10 flex flex-col gap-10 items-center w-full pt-50 pb-20 sm:pt-70 px-2">
       <Header></Header>
         <Introduction />
         <AboutMe></AboutMe>

@@ -9,13 +9,13 @@ function AboutMe() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.5 }}
-    className="flex flex-col gap-4 w-180">
+    className="flex flex-col gap-4 max-w-180">
       <h2 className="flex">
         <FiChevronLeft className="text-(--accent)" />
         Serviços
         <FiChevronRight className="text-(--accent)" />
       </h2>
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         <ServiceCard
           title="UI/UX de Páginas Web"
           description="Design UI/UX para páginas web modernas, responsivas e focadas em proporcionar uma experiência intuitiva ao usuário."

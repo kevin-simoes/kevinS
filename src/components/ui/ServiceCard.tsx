@@ -20,7 +20,7 @@ export function ServiceCard({
         type: "spring",
         stiffness: 200,
       }}
-      className="relative w-full rounded-3xl border border-(--border) bg-(--card) p-5 overflow-hidden"
+      className="relative max-w-180 rounded-3xl border border-(--border) bg-(--card) p-5 overflow-hidden"
     >
       {/* Content */}
       <div className="flex flex-col gap-3 ml-10">

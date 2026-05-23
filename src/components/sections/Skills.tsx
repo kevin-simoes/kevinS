@@ -9,8 +9,8 @@ function Skills() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.5 }}
-    className="flex flex-col gap-4 w-180" id="skills">
-      <h2 className="flex">
+    className="flex flex-col gap-4 max-w-180 items-center sm:items-start" id="skills">
+      <h2 className="flex items-center">
         <FiChevronLeft className="text-(--accent)" />
         Habilidades
         <FiChevronRight className="text-(--accent)" />
@@ -22,7 +22,6 @@ function Skills() {
           <Tags link="https://www.figma.com/resource-library/responsive-website-design/">Responsive Design</Tags>
         </div>
       </div>
-      <div className="flex flex-wrap gap-4">
         <div className="flex flex-col gap-4 bg-(--group-background) rounded-lg p-4">
           Técnologias Frontend
           <div className="flex flex-wrap gap-2">
@@ -44,7 +43,7 @@ function Skills() {
         </div>
         <div className="flex flex-col gap-4 bg-(--group-background) rounded-lg p-4">
           Ferramentas & Interação
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-start sm:justify-center gap-2 ">
 
           <Tags link="https://git-scm.com">Git</Tags>
           <Tags link="https://github.com/about">GitHub</Tags>
@@ -55,7 +54,6 @@ function Skills() {
           <Tags link="https://netlify.com">Netlify</Tags>
           </div>
         </div>
-      </div>
     </motion.main>
   );
 }

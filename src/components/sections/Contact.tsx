@@ -10,7 +10,7 @@ function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col gap-5 w-full max-w-3xl items-start"
+      className="flex flex-col gap-5 w-full max-w-3xl items-center  sm:items-start"
     >
       <h2 className="flex">
         <FiChevronLeft className="text-(--accent)" />
