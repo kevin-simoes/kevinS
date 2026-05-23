@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+<div align="center">
+    <h1 style="display: flex; justify-content: center;">
+        <picture>
+            <img src="./src/assets/images/savicon.png" width="18">
+        </picture>
+        evinS
+    </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <p>
+    Front End Developer focado em transformar ideias em experiências digitais modernas, funcionais e responsivas.
+  </p>
+</div>
 
-Currently, two official plugins are available:
+<div align="center">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+    <img src="https://img.shields.io/badge/TailwindCSS-0F172A?style=for-the-badge&logo=tailwind-css&logoColor=38BDF8">
+    <img src="https://img.shields.io/badge/Framer%20Motion-EF008F?style=for-the-badge&logo=framer&logoColor=white">
+    <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white">
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 📖 Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este projeto consiste no desenvolvimento do meu portfólio pessoal como desenvolvedor Front End, criado com foco em performance, design moderno e interatividade.
 
-## Expanding the ESLint configuration
+O objetivo do projeto é apresentar minhas habilidades, serviços, projetos e tecnologias de forma visualmente atrativa e profissional, reforçando minha identidade como desenvolvedor focado em UI/UX e desenvolvimento web moderno.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 🌐 Acesse o Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<p align="left">
+  <a href="https://kevin-s.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Visualizar%20Projeto-0B4DE5?style=for-the-badge&logo=vercel&logoColor=white">
+  </a>
+</p>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+# ✨ Funcionalidades
+
+- 🌙 Tema Light/Dark
+- 🎨 Interface moderna e responsiva
+- ⚡ Animações fluidas com Framer Motion
+- 🧩 Componentização reutilizável
+- 📱 Responsividade para dispositivos móveis
+- 🔴 Elementos 3D utilizando Three.js
+- 🚀 Alta performance com Vite
+
+---
+
+# 🚀 Como Rodar o Projeto
+
+## Clone o repositório
+
+```bash
+git clone https://github.com/kevin-simoes/kevinS.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Entre na pasta
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd kevinS
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instale as dependências
+
+```bash
+npm install
+```
+
+## Rode o projeto
+
+```bash
+npm run dev
 ```
