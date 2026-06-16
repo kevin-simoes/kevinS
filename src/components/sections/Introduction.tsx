@@ -6,6 +6,7 @@ import Profile from "../ui/Profile";
 
 function Introduction() {
   return (
+    <main>
     <motion.main
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -48,11 +49,12 @@ function Introduction() {
           </div>
         </a>
       </span>
+    </motion.main>
       <div className="flex items-center gap-2 justify-center p-3">
         <LuMouse></LuMouse>
         Role a tela
       </div>
-    </motion.main>
+    </main>
   );
 }
 

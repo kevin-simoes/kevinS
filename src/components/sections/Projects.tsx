@@ -8,16 +8,23 @@ function Projects() {
 
   const projects = [
     {
+      title: "EcoShield",
+      date: "Junho, 2026",
+      description: "Monitoramento climático inteligente com dados orbitais.",
+      link: "https://github.com/EcoShield-ODS-13",
+      tags: ["HTML", "CSS", "Javascript", "Python", "Kotlin", "API"],
+    },
+    {
       title: "Organizer Landing Page",
       date: "Maio, 2026",
-      description: "Landing Page for the Organizer app.",
+      description: "Landing Page para o aplicativo Organizer.",
       link: "https://github.com/kevin-simoes/organizer-landingpage",
       tags: ["HTML", "CSS", "Javascript", "Responsive"],
     },
     {
       title: "Vinharia Agnello",
       date: "Abril, 2026",
-      description: "Website for college project.",
+      description: "Página para um trabalho da faculdade.",
       link: "https://github.com/kevin-simoes/vinheria-agnello-checkpoint02",
       tags: ["HTML", "CSS", "Javascript", "Responsive"],
     },
@@ -25,17 +32,17 @@ function Projects() {
       title: "Le Bouledogue",
       date: "Fevereiro, 2026",
       description:
-        "A fictional e-commerce site that simulates transactions and DOM manipulation.",
+        "Um site fictício de comércio eletrônico que simula transações e manipulação do DOM.",
       link: "https://github.com/kevin-simoes/Le-Bouledogue",
       tags: ["React", "Next", "TypeScript", "Prisma", "Ecommerce"],
     },
-    {
-      title: "The Last Of Us Characters",
-      date: "2025",
-      description: "Visualization of characters from the game The Last Of Us",
-      link: "https://github.com/kevin-simoes/Games-characters",
-      tags: ["HTML", "CSS", "Javascript", "Responsive"],
-    },
+    // {
+    //   title: "The Last Of Us Characters",
+    //   date: "2025",
+    //   description: "Visualização dos personagens do jogo The Last Of Us",
+    //   link: "https://github.com/kevin-simoes/Games-characters",
+    //   tags: ["HTML", "CSS", "Javascript", "Responsive"],
+    // },
   ];
 
   const initialProjects = projects.slice(0, 2);

@@ -9,7 +9,7 @@ function Skills() {
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.5 }}
-    className="flex flex-col gap-4 max-w-180 items-start" id="skills">
+    className="flex flex-col gap-4" id="skills">
       <h2 className="flex items-center">
         <FiChevronLeft className="text-(--accent)" />
         Habilidades
